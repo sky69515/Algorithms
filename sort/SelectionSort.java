@@ -1,4 +1,3 @@
-package algs4.sort;
 
 import java.util.Scanner;
 /**
