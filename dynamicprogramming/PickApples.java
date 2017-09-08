@@ -23,9 +23,9 @@ public class PickApples {
 		int[][] s=new int[n][m];
 		for(int i=0;i<n;i++)
 			for(int j=0;j<m;j++)
-				if(i>0&&j>0)				s[i][j]=(s[i-1][j]>s[i][j-1]?s[i-1][j]:s[i][j-1])+d[i][j];
-				else if(i>0&&j==0)		s[i][j]=s[i-1][j]+d[i][j];
-				else if(i==0&&j>0)		s[i][j]=s[i][j-1]+d[i][j];
+				if(i>0&&j>0)		s[i][j]=(s[i-1][j]>s[i][j-1]?s[i-1][j]:s[i][j-1])+d[i][j];
+				else if(i>0&&j==0)	s[i][j]=s[i-1][j]+d[i][j];
+				else if(i==0&&j>0)	s[i][j]=s[i][j-1]+d[i][j];
 				else if(i==0&&j==0)	s[i][j]=d[i][j];
 		System.out.println(s[n-1][m-1]);
 	}
